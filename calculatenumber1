@@ -1,0 +1,23 @@
+import java.util.*;
+public class main
+{
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int m= sc.nextInt();
+		int n = sc.nextInt();
+		int result = 0,int_result=0;
+		for(int i=m;i<=n;i++){
+		    String str = Integer.toString(i);
+		    for(int j=0;j<str.length();j++){
+		        
+		        if(str.charAt(j) == '1'){
+		            int_result+=1;
+		        }
+		        result+=int_result;
+		        int_result=0;
+		    }
+		}
+		System.out.println(result);
+	}
+}
